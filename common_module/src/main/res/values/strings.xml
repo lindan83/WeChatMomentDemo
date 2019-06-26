@@ -1,0 +1,5 @@
+<resources>
+    <string name="common_str_network_error">网络连接出错，请检查网络</string>
+    <string name="common_str_network_timeout">网络超时，请检查网络并稍后重试</string>
+    <string name="common_str_network_hostname_resolve_failure">域名解析失败</string>
+</resources>

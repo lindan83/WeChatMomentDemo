@@ -1,0 +1,13 @@
+<TextView android:id="@+id/tvComment"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:lineSpacingMultiplier="1.1"
+          android:paddingBottom="2dp"
+          android:paddingLeft="3dp"
+          android:paddingRight="3dp"
+          android:paddingTop="2dp"
+          android:textColor="@color/c_666666"
+          android:textSize="12sp"
+          tools:text="评论内容"/>

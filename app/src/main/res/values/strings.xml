@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeChatMomentsDemo</string>
+
+    <string name="like">赞</string>
+    <string name="comment_on">评论</string>
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+
+    <string name="collapse">收起</string>
+    <string name="expand">全文</string>
+
+    <string name="transition_image_detail">transition_image_detail</string>
+</resources>

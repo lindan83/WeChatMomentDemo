@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_adapter_item_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/copy"
+        android:textColor="@color/c_232323"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/basic_skin_icon_dot_gray"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_adapter_item_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="10dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:text="@string/delete"
+        android:textColor="@color/c_232323"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

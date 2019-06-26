@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="15dp">
+
+    <!--头像-->
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@color/colorPrimary" />
+
+    <!--名字-->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar"
+        app:layout_constraintTop_toTopOf="@id/ivAvatar"
+        tools:text="赵铁旺" />
+
+    <!--主题及内容-->
+    <com.lance.wechatmoments.demo.widget.ExpandTextView
+        android:id="@+id/expandContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:collapseText="@string/collapse"
+        app:expandText="@string/expand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:showLines="5"
+        tools:visibility="visible" />
+
+    <!--九宫格图片-->
+    <com.lance.wechatmoments.demo.widget.NineImageGridView
+        android:id="@+id/nineImageList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/expandContent"
+        app:spacing="4dp"
+        tools:visibility="visible" />
+
+    <!-- 转发 评论 点赞-->
+    <ImageView
+        android:id="@+id/ivSns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/icon_snsimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nineImageList"
+        tools:ignore="ContentDescription" />
+
+    <!--点击列表-->
+    <com.lance.wechatmoments.demo.widget.PraiseListView
+        android:id="@+id/praiseListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="@color/c_333333"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/ivSns"
+        app:praiseItemColor="@color/c_8290AF"
+        tools:visibility="visible" />
+
+
+    <!--评论列表-->
+    <com.lance.wechatmoments.demo.widget.CommentListView
+        android:id="@+id/commentListView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:commentItemColor="@color/c_FF3752"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/praiseListView"
+        app:showItemCount="2"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

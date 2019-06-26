@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--评论列表控件-->
+    <declare-styleable name="CommentListView">
+        <attr name="commentItemColor" format="color" />
+        <attr name="commentItemSelectorColor" format="color" />
+        <attr name="showItemCount" format="integer" />
+    </declare-styleable>
+
+    <!--点赞列表控件-->
+    <declare-styleable name="PraiseListView">
+        <attr name="praiseItemColor" format="color" />
+        <attr name="praiseItemSelectedColor" format="color" />
+    </declare-styleable>
+
+    <!--折叠文本控件-->
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="expandText" format="string|reference" />
+        <attr name="collapseText" format="string|reference" />
+    </declare-styleable>
+
+    <!--自由宽高比ImageView-->
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <!--九宫格图片控件-->
+    <declare-styleable name="AbstractNineImageGridView">
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+</resources>
