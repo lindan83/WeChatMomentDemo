@@ -16,6 +16,9 @@ abstract class BaseViewModel : ViewModel() {
 
     val throwableLiveData = MutableLiveData<Throwable>()
 
+    /**
+     * 默认的订阅与观察线程调度：IO线程订阅/UI线程观察
+     */
     fun <T> Observable<T>.ioToMain(): Observable<T> {
         return this.compose(SchedulerUtils.ioToMain())
     }

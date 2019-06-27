@@ -3,6 +3,7 @@ package com.lance.wechatmoments.demo.common.base
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.Window
+import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -78,6 +79,6 @@ abstract class BaseActivity<VM : BaseViewModel> : AppCompatActivity() {
      * 默认的出错提示 toast形式
      */
     protected open fun error(errorMsg : String) {
-
+        Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show()
     }
 }
