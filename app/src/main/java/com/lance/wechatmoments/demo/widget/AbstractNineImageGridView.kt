@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.lance.wechatmoments.demo.R
 import java.util.*
 import kotlin.math.ceil
 
@@ -36,12 +37,9 @@ abstract class AbstractNineImageGridView : ViewGroup {
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         val typedArray =
-            context.obtainStyledAttributes(attrs, com.lance.wechatmoments.demo.R.styleable.AbstractNineImageGridView)
+            context.obtainStyledAttributes(attrs, R.styleable.AbstractNineImageGridView)
 
-        spacing = typedArray.getDimension(
-            com.lance.wechatmoments.demo.R.styleable.AbstractNineImageGridView_spacing,
-            DEFAULT_SPACING
-        )
+        spacing = typedArray.getDimension(R.styleable.AbstractNineImageGridView_spacing, DEFAULT_SPACING)
         typedArray.recycle()
         init()
     }

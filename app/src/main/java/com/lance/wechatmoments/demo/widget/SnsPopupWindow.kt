@@ -107,8 +107,8 @@ class SnsPopupWindow(context: Context) : PopupWindow(), OnClickListener {
     override fun onClick(view: View) {
         dismiss()
         when (view.id) {
-            R.id.tvZan -> itemClickListener!!.onItemClick(actionItems[0], 0)
-            R.id.tvComment -> itemClickListener!!.onItemClick(actionItems[1], 1)
+            R.id.tvZan -> itemClickListener?.onItemClick(actionItems[0], 0)
+            R.id.tvComment -> itemClickListener?.onItemClick(actionItems[1], 1)
             else -> {
             }
         }

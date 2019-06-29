@@ -99,7 +99,7 @@ class DynamicMovementMethod : BaseMovementMethod {
             }
 
         } else if (action == MotionEvent.ACTION_UP) {
-            if (clickLinks!!.size > 0) {
+            if (!clickLinks.isNullOrEmpty()) {
                 clickLinks!![0].onClick(widget)
                 if (bgSpan != null) {
                     //移除点击时设置的背景span
